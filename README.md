@@ -1,10 +1,11 @@
 This package is based on [MMdetection](https://mmdetection.readthedocs.io/en/v2.0.0/) v2.0.
 
-MMdetection installation and usage guidelines provided in it's documentation.
+MMdetection installation and usage guidelines provided in it's documentation. A slightly modified dockerfile is also provided here.
 
 To run the detector and test on images or videos, two main components are needed.
 The first one are the configuration files which describe which detector is used. The second component are the trained models using that specific detector.
 When providing the input to MMdetection, select the proper configuration file with its respective trained model. The list below describes that.
+Use example to test an image or video as in [here](https://mmdetection.readthedocs.io/en/v2.0.0/getting_started.html#inference-with-pretrained-models). 
 
 Exact correspondence is as follows:
 
@@ -27,7 +28,7 @@ Classes: classes_shrp2_train.txt
 > Extra Data only:
 Config file: custom_configs/shrp2+extra/cascade_rcnn_r101_fpn_dconv_c3-c5_1x_coco.py
 
-Model file:extra_data_only.pth
+Model file: extra_data_only.pth
 
 Classes: classes_extra.txt
 
@@ -44,22 +45,6 @@ Classes: classes_shrp2_extra.txt
 Config file: custom_configs/shrp2+extra/cascade_rcnn_r101_fpn_dconv_c3-c5_1x_coco.py
 
 Model file: shrp2_less_on_train_set+extra_data_outside_objects.pth
-
-Classes: classes_shrp2_extra.txt
-
-> SHRP2 original split + Extra Data (Outside Objects set +  Billboard set)
-
-Config file: custom_configs/shrp2+extra/cascade_rcnn_r101_fpn_dconv_c3-c5_1x_coco.py
-
-Model file: shrp2_original_split+extra_data_outside_objects_and_billboard_set.pth
-
-Classes: classes_shrp2_extra.txt
-
-> SHRP2 (with less SHRP2 images on train set) + Extra Data (Outside Objects set +  Billboard set)
-
-Config file: custom_configs/shrp2+extra/cascade_rcnn_r101_fpn_dconv_c3-c5_1x_coco.py
-
-Model file: shrp2_less_on_train_set+extra_data_outside_objects_and_billboard_set.pth
 
 Classes: classes_shrp2_extra.txt
 

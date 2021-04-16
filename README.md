@@ -1,6 +1,6 @@
 This package is based on [MMdetection](https://mmdetection.readthedocs.io/en/v2.0.0/) v2.0.
 
-MMdetection installation and usage guidelines provided in it's documentation. A slightly modified dockerfile is also provided here.
+MMdetection installation and usage guidelines are provided in it's documentation. A slightly modified dockerfile is also provided here.
 
 To run the detector and test on images or videos, two main components are needed.
 The first one are the configuration files which describe which detector is used. The second component are the trained models using that specific detector.

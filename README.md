@@ -7,6 +7,8 @@ The first one are the configuration files which describe which detector is used.
 When providing the input to MMdetection, select the proper configuration file with its respective trained model. The list below describes that.
 Use example to test an image or video as in [here](https://mmdetection.readthedocs.io/en/v2.0.0/getting_started.html#inference-with-pretrained-models). 
 
+The path to the trained models is this: https://mirror.vtti.vt.edu/vtti/ctbs/object_detection/ 
+
 Exact correspondence is as follows:
 
 > VA Beach Traffic Dataset
